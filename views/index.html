@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-Up/Login Form</title>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+
+</head>
+
+<body>
+    <div class="form">
+
+
+        <ul class="tab-group">
+            <li class="tab active"><a href="#login_form">Log In</a></li>
+            <li class="tab"><b href="#register_form">Sign Up</b></li>
+        </ul>
+
+
+
+        <div class="tab-content">
+
+
+            <div id="login_form">
+                <h1>Welcome Back!</h1>
+
+                <form id="login_form" action="" method="post">
+
+
+                    <div class="field-wrap">
+                        <label for="email">Email<span class="req">*</span></label>
+                        <input type="email" required autocomplete="off" id="email" class="email" name="email" autofocus/>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label for="pass">Password<span class="req">*</span></label>
+                        <input type="password" id="pass" class ="pass" name="pass1" />
+                    </div>
+
+                    <p class="forgot"><a href="#forgot">Forgot Password?</a></p>
+
+
+
+                    <button class="button button-block" />Log In <input type="submit" style="display: none;" /></button>
+
+                </form>
+
+            </div>
+
+
+
+
+            <div id="register_form">
+
+
+                <form id="register_form" action="" method="POST">
+
+
+                    <div class="top-row">
+                        <div class="field-wrap">
+                            <label for="firstname">First name<span class="req">*</span></label>
+                            <input type="text"required autocomplete="off" id="firstname" class="firstname" name="firstname" autofocus/>
+                        </div>
+
+                        <div class="field-wrap">
+                            <label for="lastname">Last name<span class="req">*</span></label>
+                            <input type="text"required autocomplete="off" id="lastname" class="lastname" name="lastname" />
+                        </div>
+                    </div>
+
+                    <div class="field-wrap">
+                        <label for="email">Email<span class="req">*</span></label>
+                        <input type="email"required autocomplete="off" id="email" class="email" name="email" />
+                    </div>
+
+                    <div class="field-wrap">
+
+
+                        <label for="pass1">Password<span class="req">*</span></label>
+                        <input type="password" required autocomplete="off" name="pass1" id="pass1" class="pass1" onkeyup="checkPass(); return false;" />
+                    </div>
+
+                    <div class="field-wrap">
+                        <label for="pass2">Confirm Password<span class="req">*</span></label>
+                        <input type="password" required autocomplete="off" name="pass2" id="pass2" class="pass2" onkeyup="checkPass(); return false;" oninput="check(this)" />
+
+
+
+
+
+                    </div>
+
+
+
+
+    <ul class="choice">
+            <li class="tab active"><a href="#">Se Faire Coacher</a></li>
+            <li class="tab"><b href="#">Coacher</b></li>
+        </ul>
+
+
+
+
+        </ul>
+
+     
+                    <button class="button1 button-block1" href="#choice"/>Get Started</button>
+
+
+                </form>
+
+
+
+
+
+            </div>
+            <!-- tab-content -->
+
+
+
+        </div>
+        <!-- /form -->
+
+
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src="javascripts/index.js"></script>
+
+</body>
+
+</html>
